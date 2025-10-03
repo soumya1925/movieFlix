@@ -62,7 +62,7 @@ Check out the live project [here](https://movie-f7cv1xsa8-soumya-rouls-projects.
 - State Management: Redux Toolkit 
 - Routing: React Router
 - [API: IMDb unofficial API](https://imdbapi.dev/)
-- Persistence: localStorage
+- Data Persistence: localStorage
 
 ---
 
@@ -71,7 +71,7 @@ Check out the live project [here](https://movie-f7cv1xsa8-soumya-rouls-projects.
 ```bash
 src/
 ├─ components/
-│  ├─ SearchBar.tsx      # Search bar with last searches & auto-clear
+│  ├─ SearchBar.tsx      # Search bar with last searches 
 │  ├─ LandingPage.tsx    # Main page with movies & search on successful Login
 │  ├─ RegisterPage.tsx   # User registration page
 │  ├─ MovieCard.tsx      # Card Data on clicking a card on Landing Page
