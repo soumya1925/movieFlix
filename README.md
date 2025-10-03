@@ -6,7 +6,7 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 
 ## 🚀 Features
 
-#🔑 User Authentication
+🔑 User Authentication
 
 -Register and login.
 
@@ -17,6 +17,8 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 ---
 
 
+
+---
 🎥 Movie Browsing
 
 --Fetch movies from IMDb API
@@ -26,6 +28,7 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 --Displays title, year, rating, poster, and plot snippet.
 
 ---
+
 # 📈 Stocks Portfolio Backend API
 
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)
