@@ -1,75 +1,114 @@
-# React + TypeScript + Vite
+A React + Redux Toolkit app to browse and search movies from IMDb API, with user authentication and personalized search history. Each user sees only their own last searches.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
 
-Currently, two official plugins are available:
+🔑 User Authentication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Register and login.
 
-## React Compiler
+Users and session stored in localStorage.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Tracks current logged-in user.
 
-Note: This will impact Vite dev & build performances.
+🎥 Movie Browsing
 
-## Expanding the ESLint configuration
+Fetch movies from IMDb API
+.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Responsive grid layout for movie cards.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Displays title, year, rating, poster, and plot snippet.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🔍 Search
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Search movies by title.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Clickable chips for last searches.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Automatically clears search when input is empty.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Last searches are user-specific.
+
+📈 Display Control
+
+Default 10 movies displayed.
+
+"Load More" increases display count by 15.
+
+📱 Responsive Design
+
+Desktop: Top row shows Top Movies, user icon, and logout button.
+
+Mobile: Headers and search bar stacked vertically.
+
+📝 User-Specific Last Searches
+
+Last searches are saved per user.
+
+Maximum of 5 recent searches.
+
+Switching users updates displayed search history.
+
+🚪 Logout
+
+Clears session and redirects to login page.
+
+🛠️ Tech Stack
+
+Frontend: React, Material UI
+
+State Management: Redux Toolkit (moviesSlice, authSlice)
+
+Routing: React Router
+
+API: IMDb unofficial API
+
+Persistence: localStorage
+
+📂 Project Structure
+src/
+├─ components/
+│  └─ SearchBar.tsx      # Search bar with last searches & auto-clear
+├─ pages/
+│  ├─ LandingPage.tsx    # Main page with movies & search
+│  ├─ RegisterPage.tsx   # User registration page
+│  └─ LoginPage.tsx      # Login page
+├─ store/
+│  ├─ authSlice.ts       # User authentication & session state
+│  ├─ moviesSlice.ts     # Movies, search term, last searches, display count
+│  └─ store.ts           # Redux store setup
+└─ App.tsx               # Main router setup
+
+⚡ Usage
+
+Clone the repo:
+
+git clone <repo-url>
+cd <repo-folder>
+
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+
+Start the app:
+
+npm start
+# or
+yarn start
+
+
+Open http://localhost:3000
+
+🌟 Future Improvements
+
+Movie detail page with full info & reviews.
+
+API pagination for large datasets.
+
+Profile page for managing last searches & favorites.
+
+Netflix-style UI with advanced styling.
