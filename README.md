@@ -8,9 +8,9 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 
 **🔑 User Authentication **
 
--Register and login.
--Users and session stored in localStorage.
--Tracks current logged-in user.
+- Register and login.
+- Users and session stored in localStorage.
+- Tracks current logged-in user.
 
 ---
 
