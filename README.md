@@ -32,18 +32,20 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 ---
 
 📈 Display Control
+
 - Default 10 movies displayed.
 - "Load More" increases display count by 15.
 
 ---
 
 📱 Responsive Design
+
 - Desktop: Top row shows Top Movies, user icon, and logout button.
 - Mobile: Headers and search bar stacked vertically.
 
 ---
 
-#📝 User-Specific Last Searches
+📝 User-Specific Last Searches
 
 - Last searches are saved per user.
 - Maximum of 5 recent searches.
@@ -51,7 +53,7 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 
 ---
   
-#🛠️ Tech Stack
+🛠️ Tech Stack
 
 - Frontend: React, Material UI
 - State Management: Redux Toolkit 
@@ -61,7 +63,7 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 
 ---
 
-##📂 Project Structure
+📂 Project Structure
 
 ```bash
 src/
