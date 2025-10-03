@@ -1,23 +1,25 @@
 A React + Redux Toolkit app to browse and search movies from IMDb API, with user authentication and personalized search history. Each user sees only their own last searches.
 
-🚀 Features
+---
+##🚀 Features
 
 🔑 User Authentication
 
-Register and login.
+--Register and login.
 
-Users and session stored in localStorage.
+--Users and session stored in localStorage.
 
-Tracks current logged-in user.
+--Tracks current logged-in user.
 
 🎥 Movie Browsing
 
-Fetch movies from IMDb API
-.
+--Fetch movies from IMDb API
 
-Responsive grid layout for movie cards.
+--Responsive grid layout for movie cards.
 
-Displays title, year, rating, poster, and plot snippet.
+--Displays title, year, rating, poster, and plot snippet.
+
+---
 
 🔍 Search
 
