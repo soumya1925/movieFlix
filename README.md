@@ -1,6 +1,9 @@
 # 🎬 Movie Search App
 
 A React + Redux Toolkit app to browse and search movies from the IMDb API, with user authentication and personalized search history. Each user sees only their own last searches.
+## Live Deployment
+
+Check out the live project [here](https://movie-f7cv1xsa8-soumya-rouls-projects.vercel.app).
 
 ---
 
