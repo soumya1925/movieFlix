@@ -60,7 +60,7 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 - Persistence: localStorage
 
 
-#📂 Project Structure
+##📂 Project Structure
 
 ```bash
 src/
