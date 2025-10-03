@@ -59,6 +59,7 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 - ![API: IMDb unofficial API](https://imdbapi.dev/)
 - Persistence: localStorage
 
+---
 
 ##📂 Project Structure
 
