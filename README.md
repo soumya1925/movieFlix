@@ -43,21 +43,16 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 
 ---
 
-📝 User-Specific Last Searches
+#📝 User-Specific Last Searches
+
 - Last searches are saved per user.
 - Maximum of 5 recent searches.
 - Switching users updates displayed search history.
 
 ---
-
-🛠️ Tech Stack
-- Frontend: React, Material UI
-- State Management: Redux Toolkit (moviesSlice, authSlice)
-- Routing: React Router
-
----
   
-##🛠️ Tech Stack
+#🛠️ Tech Stack
+
 - Frontend: React, Material UI
 - State Management: Redux Toolkit 
 - Routing: React Router
@@ -65,7 +60,8 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 - Persistence: localStorage
 
 
-##📂 Project Structure
+#📂 Project Structure
+
 ```bash
 src/
 ├─ components/
