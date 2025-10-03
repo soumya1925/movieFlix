@@ -55,33 +55,6 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 - State Management: Redux Toolkit (moviesSlice, authSlice)
 - Routing: React Router
 
-
-
-Data Persistence: localStorage
-
-
-# 📈 Stocks Portfolio Backend API
-
-![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)
-![Express](https://img.shields.io/badge/Express.js-4.x-lightgrey?logo=express)
-![YahooFinance](https://img.shields.io/badge/API-YahooFinance-blue?logo=yahoo)
-![License](https://img.shields.io/badge/license-MIT-brightgreen)
-
-A backend API built with **Node.js + Express** that fetches stock data from **Yahoo Finance** and enriches it with portfolio insights.
-
----
-
-## 🚀 What It Calculates
-
-For each stock in your portfolio:
-- 💰 **Investment Value**
-- 💹 **Current Market Price (CMP)**
-- 📊 **Present Value**
-- 📈 **Gain/Loss** (absolute and %)
-- 📉 **P/E Ratio**
-- 🧮 **EPS (Earnings per Share)**
-- 🏦 **Latest Net Income** (annual or quarterly)
-
 ---
   
 ##🛠️ Tech Stack
@@ -92,9 +65,8 @@ For each stock in your portfolio:
 - Persistence: localStorage
 
 
-
 ##📂 Project Structure
-.
+```bash
 src/
 ├─ components/
 │  ├─ SearchBar.tsx      # Search bar with last searches & auto-clear
@@ -108,7 +80,7 @@ src/
 │  ├─ movieCardSlice.ts  # Specific movie card details like artists , writers ,stars
 │  └─ index.tsx          # Redux store setup
 └─ App.tsx               # Main router setup
-
+```
 
 
 
