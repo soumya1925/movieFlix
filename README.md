@@ -15,10 +15,6 @@ A React + Redux Toolkit app to browse and search movies from the IMDb API, with 
 -Tracks current logged-in user.
 
 ---
-
-
-
----
 🎥 Movie Browsing
 
 --Fetch movies from IMDb API
